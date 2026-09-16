@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy — Palette</title>
+<style>
+:root{ --ink:#1a1a1a; --muted:#666; --bg:#fff; --border:#eee; }
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --ink:#f0f0f0; --muted:#aaa; --bg:#161616; --border:#2a2a2a; }
+}
+:root[data-theme="dark"]{ --ink:#f0f0f0; --muted:#aaa; --bg:#161616; --border:#2a2a2a; }
+*{box-sizing:border-box;}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.6;
+}
+.wrap{ max-width:680px; margin:0 auto; padding:48px 20px 80px; }
+h1{ font-size:26px; margin-bottom:4px; }
+.updated{ color:var(--muted); font-size:13px; margin-bottom:32px; }
+h2{ font-size:17px; margin-top:32px; }
+p, li{ font-size:15px; }
+ul{ padding-left:20px; }
+.badge{
+  display:flex; align-items:center; gap:8px; font-weight:700; font-size:15px; margin-bottom:28px;
+}
+.badge svg{ display:block; }
+hr{ border:none; border-top:1px solid var(--border); margin:36px 0; }
+.contact{ color:var(--muted); font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="badge">
+    <svg viewBox="0 0 24 24" width="20" height="20">
+      <rect x="1" y="1" width="6.2" height="6.2" rx="1.7" fill="#FF8FA3"/>
+      <rect x="8.9" y="1" width="6.2" height="6.2" rx="1.7" fill="#6EC6FF"/>
+      <rect x="16.8" y="1" width="6.2" height="6.2" rx="1.7" fill="#7EE8B8"/>
+      <rect x="1" y="8.9" width="6.2" height="6.2" rx="1.7" fill="#FFD966"/>
+      <rect x="8.9" y="8.9" width="6.2" height="6.2" rx="1.7" fill="#B9A6FF"/>
+      <rect x="16.8" y="8.9" width="6.2" height="6.2" rx="1.7" fill="#FFB37E"/>
+      <rect x="1" y="16.8" width="6.2" height="6.2" rx="1.7" fill="#5FE0D0"/>
+      <rect x="8.9" y="16.8" width="6.2" height="6.2" rx="1.7" fill="#FFAAD4"/>
+      <rect x="16.8" y="16.8" width="6.2" height="6.2" rx="1.7" fill="#8FA6FF"/>
+    </svg>
+    Palette
+  </div>
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: September 16, 2026</p>
+
+  <p>Palette is a browser extension that extracts color palettes from
+  images, video frames, and screen regions you choose, and lets you save,
+  organize, and export them.</p>
+
+  <h2>The short version</h2>
+  <p>Palette does not collect, transmit, sell, or share any of your data
+  with anyone. Everything it stores lives only in your own browser, on
+  your own device. There are no servers, no accounts, no analytics, and no
+  third parties involved at any point.</p>
+
+  <h2>What Palette accesses, and why</h2>
+  <ul>
+    <li><strong>Images, video frames, and page content you explicitly
+    interact with.</strong> When you right-click an image or video and
+    choose an extraction option, or use the region-crop tool, or use the
+    eyedropper, Palette reads the pixels of that specific content to
+    compute a color palette. It does not read, scan, or process anything
+    on a page you haven't explicitly acted on.</li>
+    <li><strong>Broad host permission (<code>&lt;all_urls&gt;</code>).</strong>
+    Palette requests access to all websites because its core feature —
+    right-click any image, on any site, to extract its colors — only works
+    if the extension can run on any page you visit. It does not use this
+    access to monitor browsing, collect history, or read page content in
+    the background; it activates only when you invoke one of its
+    features.</li>
+  </ul>
+
+  <h2>Where your data is stored</h2>
+  <ul>
+    <li>Palette names, hex codes, notes, and collection organization are
+    stored using the browser's built-in <code>chrome.storage.local</code>
+    API.</li>
+    <li>Saved source images are stored using the browser's built-in
+    IndexedDB API.</li>
+  </ul>
+  <p>Both are local to your browser profile on your device. Palette has no
+  backend server, and nothing you save is ever uploaded anywhere.
+  Uninstalling the extension removes this data (per Chrome's standard
+  extension-storage behavior).</p>
+
+  <h2>Sharing and exporting</h2>
+  <p>Palette includes an optional "Export board as JSON" feature. This
+  creates a file on your own device that <em>you</em> choose to save,
+  share, or transfer — Palette itself never sends this data anywhere. The
+  same applies to any other export (CSS, Tailwind, ASE, ACO, images) — all
+  are local file downloads you initiate.</p>
+
+  <h2>Third parties</h2>
+  <p>Palette does not integrate with, send data to, or share data with any
+  third-party service, analytics provider, or advertising network.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the "Last updated" date above will be revised
+  accordingly.</p>
+
+  <hr />
+  <p class="contact">Contact: [your name / email — required by the Chrome
+  Web Store for published extensions]</p>
+</div>
+</body>
+</html>
